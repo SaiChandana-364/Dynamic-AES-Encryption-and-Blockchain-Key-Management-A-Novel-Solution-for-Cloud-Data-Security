@@ -1,0 +1,52 @@
+{% load static %}
+<html>
+<head>
+<title>Dynamic AES</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link href="{% static 'style.css' %}" rel="stylesheet" type="text/css" />
+<style>
+  .logo h1 {
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<div class="main">
+  <div class="main_resize">
+    <div class="header">
+      <div class="logo">
+        <h1><span>Secure File Sharing with Dynamic AES Encryption and Blockchain      
+		</span><small></small></h1>
+    
+      </div>
+    </div>
+    <div class="content">
+      <div class="content_bg">
+        <div class="menu_nav">
+          <ul>
+           <ul>
+      <li><a href="{% url 'index' %}">Home</a></li>
+      <li><a href="{% url 'Login' %}">User Login Here</a></li>
+      <li><a href="{% url 'Signup' %}">New User Signup Here</a></li>
+     
+   </ul>
+          </ul>
+        </div>
+        <div class="hbg"><img src="{% static 'images/header_image.jpg' %}" width="1015" height="286" alt="" /></div>
+
+		{{ data }}
+
+       <!-- <p align="justify"><font size="3" style="font-family: Comic Sans MS" color="black">Experience peace of mind knowing that your data is protected with industry-leading security. 
+        Our dynamic AES encryption combined with blockchain technology ensures your files remain secure, private, and transparent.</p>
+  -->
+  <footer style="background-color:#f8f8f8; text-align:center; padding:20px 10px; font-family: Arial, sans-serif; font-size:14px; color:#636363;">
+    <p><strong>Secure File Sharing with Dynamic AES Encryption and Blockchain</strong></p>
+    <p>
+      Experience peace of mind knowing that your data is protected with industry-leading security. 
+      Our dynamic AES encryption combined with blockchain technology ensures your files remain secure, private, and transparent.
+    </p>
+    <p>&copy; 2025 Secure File Sharing. All rights reserved.</p>
+  </footer>
+ 
+  </body>
+</html>
